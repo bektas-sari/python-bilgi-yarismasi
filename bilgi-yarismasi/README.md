@@ -13,8 +13,8 @@ Bu proje, Flask kullanılarak geliştirilmiş basit bir bilgi yarışması web u
 
 1. Repoyu klonlayın:
    \`\`\`
-   git clone https://github.com/bektas-sari/flask-quiz-app.git
-   cd flask-quiz-app
+   git clone https://github.com/bektas-sari/bilgi-yarismasi.git
+   cd bilgi-yarismasi
    \`\`\`
 
 2. Sanal ortam oluşturun ve aktifleştirin:
