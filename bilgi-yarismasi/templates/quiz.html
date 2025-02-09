@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bilgi Yarışması - Soru</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Soru {{ index + 1 }}</h2>
+        <p>{{ question.question }}</p>
+        <form method="POST" action="{{ url_for('handle_answer') }}">
+            {% for option in question.options %}
+            <label>
+                <input type="radio" name="answer" value="{{ option }}" required>
+                {{ option }}
+            </label><br>
+            {% endfor %}
+            <button type="submit" class="submit-button">Sonraki Soru</button>
+        </form>
+    </div>
+</body>
+</html>
+
